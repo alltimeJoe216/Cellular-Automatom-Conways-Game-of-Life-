@@ -10,6 +10,11 @@ import UIKit
 
 /*
  
+ USER Functions:
+ 
+ Will need games funcs like run, reset grid, presets(tap for single cell? block? random? beacon, gliders?) <-- if time allows it
+ 
+ 
  
  
  

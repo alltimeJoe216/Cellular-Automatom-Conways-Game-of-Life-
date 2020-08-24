@@ -15,7 +15,7 @@
 		BB8B4C3424F41A580068A405 /* Cellular_AutomatomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C3324F41A580068A405 /* Cellular_AutomatomTests.swift */; };
 		BB8B4C3F24F41A580068A405 /* Cellular_AutomatomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C3E24F41A580068A405 /* Cellular_AutomatomUITests.swift */; };
 		BB8B4C5224F41C520068A405 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C5124F41C520068A405 /* CellView.swift */; };
-		BB8B4C5524F41DAB0068A405 /* RandomColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C5424F41DAB0068A405 /* RandomColorGenerator.swift */; };
+		BB8B4C5524F41DAB0068A405 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C5424F41DAB0068A405 /* UIColorHelper.swift */; };
 		BB8B4C5724F41E840068A405 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C5624F41E840068A405 /* GridView.swift */; };
 		BB8B4C5924F436F90068A405 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C5824F436F90068A405 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +52,7 @@
 		BB8B4C3E24F41A580068A405 /* Cellular_AutomatomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cellular_AutomatomUITests.swift; sourceTree = "<group>"; };
 		BB8B4C4024F41A580068A405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB8B4C5124F41C520068A405 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
-		BB8B4C5424F41DAB0068A405 /* RandomColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorGenerator.swift; sourceTree = "<group>"; };
+		BB8B4C5424F41DAB0068A405 /* UIColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
 		BB8B4C5624F41E840068A405 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		BB8B4C5824F436F90068A405 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,7 +180,7 @@
 		BB8B4C5324F41D9A0068A405 /* Helper FIles */ = {
 			isa = PBXGroup;
 			children = (
-				BB8B4C5424F41DAB0068A405 /* RandomColorGenerator.swift */,
+				BB8B4C5424F41DAB0068A405 /* UIColorHelper.swift */,
 			);
 			path = "Helper FIles";
 			sourceTree = "<group>";
@@ -321,7 +321,7 @@
 				BB8B4C1F24F41A560068A405 /* SceneDelegate.swift in Sources */,
 				BB8B4C5724F41E840068A405 /* GridView.swift in Sources */,
 				BB8B4C5924F436F90068A405 /* GameViewController.swift in Sources */,
-				BB8B4C5524F41DAB0068A405 /* RandomColorGenerator.swift in Sources */,
+				BB8B4C5524F41DAB0068A405 /* UIColorHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
