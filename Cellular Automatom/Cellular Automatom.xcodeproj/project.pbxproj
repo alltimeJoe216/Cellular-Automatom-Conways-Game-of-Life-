@@ -15,6 +15,9 @@
 		BB8B4C2924F41A580068A405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8B4C2724F41A580068A405 /* LaunchScreen.storyboard */; };
 		BB8B4C3424F41A580068A405 /* Cellular_AutomatomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C3324F41A580068A405 /* Cellular_AutomatomTests.swift */; };
 		BB8B4C3F24F41A580068A405 /* Cellular_AutomatomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C3E24F41A580068A405 /* Cellular_AutomatomUITests.swift */; };
+		BB8B4C5224F41C520068A405 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C5124F41C520068A405 /* CellView.swift */; };
+		BB8B4C5524F41DAB0068A405 /* RandomColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C5424F41DAB0068A405 /* RandomColorGenerator.swift */; };
+		BB8B4C5724F41E840068A405 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C5624F41E840068A405 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		BB8B4C3A24F41A580068A405 /* Cellular AutomatomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cellular AutomatomUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8B4C3E24F41A580068A405 /* Cellular_AutomatomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cellular_AutomatomUITests.swift; sourceTree = "<group>"; };
 		BB8B4C4024F41A580068A405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8B4C5124F41C520068A405 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		BB8B4C5424F41DAB0068A405 /* RandomColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorGenerator.swift; sourceTree = "<group>"; };
+		BB8B4C5624F41E840068A405 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,13 @@
 		BB8B4C1B24F41A560068A405 /* Cellular Automatom */ = {
 			isa = PBXGroup;
 			children = (
-				BB8B4C1C24F41A560068A405 /* AppDelegate.swift */,
-				BB8B4C1E24F41A560068A405 /* SceneDelegate.swift */,
-				BB8B4C2024F41A560068A405 /* ViewController.swift */,
-				BB8B4C2224F41A560068A405 /* Main.storyboard */,
-				BB8B4C2524F41A570068A405 /* Assets.xcassets */,
-				BB8B4C2724F41A580068A405 /* LaunchScreen.storyboard */,
 				BB8B4C2A24F41A580068A405 /* Info.plist */,
+				BB8B4C2524F41A570068A405 /* Assets.xcassets */,
+				BB8B4C5324F41D9A0068A405 /* Helper FIles */,
+				BB8B4C4C24F41BE40068A405 /* Delegates */,
+				BB8B4C4D24F41BF60068A405 /* ViewControllers */,
+				BB8B4C4F24F41C140068A405 /* Models */,
+				BB8B4C4E24F41BFF0068A405 /* Storyboards */,
 			);
 			path = "Cellular Automatom";
 			sourceTree = "<group>";
@@ -126,6 +132,57 @@
 				BB8B4C4024F41A580068A405 /* Info.plist */,
 			);
 			path = "Cellular AutomatomUITests";
+			sourceTree = "<group>";
+		};
+		BB8B4C4C24F41BE40068A405 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				BB8B4C1C24F41A560068A405 /* AppDelegate.swift */,
+				BB8B4C1E24F41A560068A405 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		BB8B4C4D24F41BF60068A405 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB8B4C2024F41A560068A405 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BB8B4C4E24F41BFF0068A405 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BB8B4C2224F41A560068A405 /* Main.storyboard */,
+				BB8B4C2724F41A580068A405 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BB8B4C4F24F41C140068A405 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB8B4C5024F41C280068A405 /* Views */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB8B4C5024F41C280068A405 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB8B4C5124F41C520068A405 /* CellView.swift */,
+				BB8B4C5624F41E840068A405 /* GridView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB8B4C5324F41D9A0068A405 /* Helper FIles */ = {
+			isa = PBXGroup;
+			children = (
+				BB8B4C5424F41DAB0068A405 /* RandomColorGenerator.swift */,
+			);
+			path = "Helper FIles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB8B4C2124F41A560068A405 /* ViewController.swift in Sources */,
+				BB8B4C5224F41C520068A405 /* CellView.swift in Sources */,
 				BB8B4C1D24F41A560068A405 /* AppDelegate.swift in Sources */,
 				BB8B4C1F24F41A560068A405 /* SceneDelegate.swift in Sources */,
+				BB8B4C5724F41E840068A405 /* GridView.swift in Sources */,
+				BB8B4C5524F41DAB0068A405 /* RandomColorGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
