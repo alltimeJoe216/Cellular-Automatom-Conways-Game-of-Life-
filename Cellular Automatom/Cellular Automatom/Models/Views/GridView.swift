@@ -6,4 +6,18 @@
 //  Copyright © 2020 Joseph Veverka. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+/*
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ */
+
+class GridView {
+    
+}
