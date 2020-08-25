@@ -18,6 +18,10 @@
 		BB8B4C5524F41DAB0068A405 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C5424F41DAB0068A405 /* UIColorHelper.swift */; };
 		BB8B4C5724F41E840068A405 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C5624F41E840068A405 /* GridView.swift */; };
 		BB8B4C5924F436F90068A405 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B4C5824F436F90068A405 /* GameViewController.swift */; };
+		BB99F28A24F5A286000433C0 /* CellPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99F28924F5A286000433C0 /* CellPresets.swift */; };
+		BB99F28C24F5A57C000433C0 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99F28B24F5A57C000433C0 /* NotificationCenter.swift */; };
+		BB99F28E24F5AE23000433C0 /* PresetCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99F28D24F5AE23000433C0 /* PresetCVCell.swift */; };
+		BB99F29024F5B19A000433C0 /* RulesAndSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99F28F24F5B19A000433C0 /* RulesAndSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		BB8B4C5424F41DAB0068A405 /* UIColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
 		BB8B4C5624F41E840068A405 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		BB8B4C5824F436F90068A405 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		BB99F28924F5A286000433C0 /* CellPresets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPresets.swift; sourceTree = "<group>"; };
+		BB99F28B24F5A57C000433C0 /* NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
+		BB99F28D24F5AE23000433C0 /* PresetCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetCVCell.swift; sourceTree = "<group>"; };
+		BB99F28F24F5B19A000433C0 /* RulesAndSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesAndSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				BB8B4C5824F436F90068A405 /* GameViewController.swift */,
+				BB99F28F24F5B19A000433C0 /* RulesAndSettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -164,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				BB8B4C5024F41C280068A405 /* Views */,
+				BB99F28924F5A286000433C0 /* CellPresets.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +183,7 @@
 			children = (
 				BB8B4C5124F41C520068A405 /* CellView.swift */,
 				BB8B4C5624F41E840068A405 /* GridView.swift */,
+				BB99F28D24F5AE23000433C0 /* PresetCVCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				BB8B4C5424F41DAB0068A405 /* UIColorHelper.swift */,
+				BB99F28B24F5A57C000433C0 /* NotificationCenter.swift */,
 			);
 			path = "Helper FIles";
 			sourceTree = "<group>";
@@ -317,11 +329,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB8B4C5224F41C520068A405 /* CellView.swift in Sources */,
+				BB99F28A24F5A286000433C0 /* CellPresets.swift in Sources */,
 				BB8B4C1D24F41A560068A405 /* AppDelegate.swift in Sources */,
+				BB99F28C24F5A57C000433C0 /* NotificationCenter.swift in Sources */,
 				BB8B4C1F24F41A560068A405 /* SceneDelegate.swift in Sources */,
 				BB8B4C5724F41E840068A405 /* GridView.swift in Sources */,
 				BB8B4C5924F436F90068A405 /* GameViewController.swift in Sources */,
+				BB99F29024F5B19A000433C0 /* RulesAndSettingsViewController.swift in Sources */,
 				BB8B4C5524F41DAB0068A405 /* UIColorHelper.swift in Sources */,
+				BB99F28E24F5AE23000433C0 /* PresetCVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

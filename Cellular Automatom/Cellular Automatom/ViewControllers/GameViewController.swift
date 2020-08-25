@@ -24,7 +24,10 @@ class GameViewController: UIViewController {
     
     //MARK: - Class Properties
     var gridView: GridView!
+    var genSpeedTimer = Timer()
+     
 
+    //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,7 +35,7 @@ class GameViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -40,6 +43,21 @@ class GameViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
 
+}
+/*/
+ 
+ This is going to house a small collection view of grid presets, maybe with a small photo showing what each one looks like
+ 
+ */
+extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+    
+    
 }

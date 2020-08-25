@@ -9,11 +9,20 @@
 import UIKit
 
 // For Cell Coloration
+enum CellColors: Int {
+    case orange
+    case pink
+    case green
+    case blue
+    case yellow
+    case black
+    case random
+}
 
 extension UIColor {
 
     func setRandomColor() -> UIColor {
-        let randomColorNum = Int.random(in: 1...4)
+        let randomColorNum = Int.random(in: 1...5)
         
         switch randomColorNum {
         case 1:
@@ -28,6 +37,16 @@ extension UIColor {
             return UIColor.yellow
         default:
             return UIColor.black
+        }
+    }
+}
+
+class ColorHelper {
+    static let shared = ColorHelper()
+    
+    var cellColor: CellColors = .black {
+        didSet {
+            NotificationCenter.default.post(name: .cellChangesColor, object: nil)
         }
     }
 }
