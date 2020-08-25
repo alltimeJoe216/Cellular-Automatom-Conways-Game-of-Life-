@@ -9,11 +9,13 @@
 import UIKit
 
 /*
+    where grid will be implemented.
+    need a segue to a rules page or something of the like.
+    a Timer() will *i think* be how we can speed and slow down generations per second etc
+    segmented control for a couple different presets?
  
- 
- 
- 
- 
+    button for tapping to next generation
+    button for reset
  
  
  */
