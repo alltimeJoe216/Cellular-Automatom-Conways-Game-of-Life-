@@ -10,6 +10,7 @@ import UIKit
 
 /*
  
+ 
  USER Functions/Property ideas:
  
  Will need games funcs like run, reset grid, presets(tap for single cell? block? random? beacon, gliders?) <-- if time allows it
@@ -24,6 +25,7 @@ import UIKit
  
  Want to be able to speed up and slow down the game...not sure how this can be implemented yet
  
+ 
  */
 
 class GridView {
@@ -35,7 +37,6 @@ class GridView {
     // Grid size
     var gridWidth: CGFloat!
     var gridHeight: CGFloat!
-    
     
     // Cell size
     var cellDims: CGFloat!
