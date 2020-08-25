@@ -36,30 +36,38 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6UN-jq-JEz">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem title="Reset" id="BBr-vu-Nyu"/>
+                                    <barButtonItem title="Reset" id="BBr-vu-Nyu">
+                                        <connections>
+                                            <action selector="resetButton:" destination="jei-xZ-TXY" id="8Dt-VT-MTK"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="6d4-NI-DHW"/>
                                     <barButtonItem title="Game Settings" id="ZYE-I2-HaL"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ABG-SN-8KT"/>
                                     <barButtonItem title="Rules" id="XFU-cb-Z9T"/>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBV-dc-3Xu">
-                                <rect key="frame" x="184" y="132" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBV-dc-3Xu">
+                                <rect key="frame" x="120" y="128" width="174" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Play Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6UN-jq-JEz" firstAttribute="bottom" secondItem="IIz-nA-ggZ" secondAttribute="bottom" id="05Z-WW-dhv"/>
                             <constraint firstItem="6UN-jq-JEz" firstAttribute="trailing" secondItem="IIz-nA-ggZ" secondAttribute="trailing" id="1zn-Gx-P2d"/>
+                            <constraint firstItem="LBV-dc-3Xu" firstAttribute="leading" secondItem="IIz-nA-ggZ" secondAttribute="leading" constant="120" id="HIF-q5-SnO"/>
+                            <constraint firstItem="LBV-dc-3Xu" firstAttribute="top" secondItem="IIz-nA-ggZ" secondAttribute="top" constant="40" id="fD8-T4-hcv"/>
                             <constraint firstItem="6UN-jq-JEz" firstAttribute="leading" secondItem="IIz-nA-ggZ" secondAttribute="leading" id="sya-Qs-6De"/>
+                            <constraint firstItem="IIz-nA-ggZ" firstAttribute="trailing" secondItem="LBV-dc-3Xu" secondAttribute="trailing" constant="120" id="tzz-uL-v3y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IIz-nA-ggZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="YUo-4T-kd3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAK-J7-z4G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="jei-xZ-TXY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="788.40579710144937" y="60.9375"/>
         </scene>
