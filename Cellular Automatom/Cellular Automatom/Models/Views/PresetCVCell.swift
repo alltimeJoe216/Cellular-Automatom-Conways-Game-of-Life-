@@ -19,7 +19,7 @@ class PresetCell: UITableViewCell {
 
         translatesAutoresizingMaskIntoConstraints = false
         self.preset = preset
-        label.text = preset.currentPreset.rawValue.capitalized
+        label.text = preset.starterPreset.rawValue.capitalized
         label.translatesAutoresizingMaskIntoConstraints = false
         preset.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.addSubview(label)

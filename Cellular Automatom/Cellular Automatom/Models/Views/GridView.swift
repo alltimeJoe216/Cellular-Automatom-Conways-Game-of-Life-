@@ -79,6 +79,8 @@ class GridView {
         self.gridHeight = gridHeight
         self.gridWidth = gridWidth
         self.cellDims = gridWidth / 50 // 50x50 grid?
+        self.bottomGrid = setupGrid(width: gridWidth, height: gridHeight, view: gridView)
+        self.topGrid = setupGrid(width: gridWidth, height: gridHeight, view: gridView, isNext: true)
         
     }
     
@@ -94,10 +96,10 @@ class GridView {
         
         var grid = [[CellView]]()
         var gridColumn = [CellView]()
-        for j in 0...24 {
-            for i in 0...24 {
+        for j in 0...49 {
+            for i in 0...49 {
                 
-                let cell = CellView(frame: CGRect(x: width / 25 * CGFloat(j), y: height / 2 - width / 2 + width / 25 * CGFloat(i), width: width / 25, height: width / 25), isAlive: false)
+                let cell = CellView(frame: CGRect(x: width / 50 * CGFloat(j), y: height / 2 - width / 2 + width / 50 * CGFloat(i), width: width / 50, height: width / 50), isAlive: false)
                 cell.gridView = self
                 if !isNext { view.addSubview(cell) }
                 gridColumn.append(cell)
@@ -117,13 +119,13 @@ class GridView {
         timer.invalidate()
         
         // reset grid
-        resetGrid(grid: bottomGrid)
+        initNewGrid(grid: bottomGrid)
         
         // reset gens
         generations = 0
     }
     
-    func resetGrid(grid: [[CellView]]) {
+    func initNewGrid(grid: [[CellView]]) {
         
         // *** KILL THEM ALL ***
         for x in 0...49 {
@@ -179,7 +181,7 @@ class GridView {
     }
     
     func nextCell() {
-        resetGrid(grid: topGrid)
+        initNewGrid(grid: topGrid)
         
         // Iterating through each cell on X-axis
         for x in 0...49 {
