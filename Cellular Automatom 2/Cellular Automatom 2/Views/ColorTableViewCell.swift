@@ -44,8 +44,8 @@ class ColorTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "colorCollectionViewCell", for: indexPath) as! ColorCollectionViewCell
 
-        cell.colorView.backgroundColor = AppData.shared.colors[indexPath.item]
-        if indexPath.item == AppData.shared.cellColorIndex {
+        cell.colorView.backgroundColor = CellColorHelper.shared.colors[indexPath.item]
+        if indexPath.item == CellColorHelper.shared.cellColorIndex {
             cell.contentView.backgroundColor = .systemRed
         }
         else {
@@ -56,7 +56,7 @@ class ColorTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        AppData.shared.cellColorIndex = indexPath.item
+        CellColorHelper.shared.cellColorIndex = indexPath.item
         collectionView.reloadData()
     }
 }

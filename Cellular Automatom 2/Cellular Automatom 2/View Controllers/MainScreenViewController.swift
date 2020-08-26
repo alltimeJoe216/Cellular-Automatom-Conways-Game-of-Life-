@@ -25,12 +25,18 @@ class MainScreenViewController: UIViewController {
     //MARK: - View Lifecycle ##
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
         setupCollectionView()
         setupStartButton()
+        let addPresetButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.refreshCells))
+        self.navigationItem.rightBarButtonItem = addPresetButton
+        let deleteGridButton = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(self.clearCells))
+        self.navigationItem.leftBarButtonItem = deleteGridButton
+        addPresetButton.tintColor = .systemPink
+        deleteGridButton.tintColor = .systemPink
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.refreshCells))
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(self.clearCells))
-        
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,7 +55,7 @@ class MainScreenViewController: UIViewController {
     
     //MARK: - IBActions
     
-
+    
     @IBAction func startButtonPressed(_ sender: UIButton) {
         toggleState()
     }
@@ -57,7 +63,11 @@ class MainScreenViewController: UIViewController {
     
     //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Todo
+        
+        if (segue.identifier == "showSettingSegue") {
+            
+            ((segue.destination as! UINavigationController).topViewController as! PresetTableViewController).mainVC = self
+        }
     }
     
     //MARK: - Class Functions ##
@@ -99,22 +109,22 @@ class MainScreenViewController: UIViewController {
             })
             
             isRunning = true
-            self.startButton.setTitle(NSLocalizedString("Stop", comment: ""), for: .normal)
+            self.startButton.setTitle("Stop", for: .normal)
+
         }
         else {
             
             isRunning = false
             timer.invalidate()
-            self.startButton.setTitle(NSLocalizedString("Start", comment: ""), for: .normal)
+            self.startButton.setTitle("Start", for: .normal)
         }
     }
     
     // Button Setup
     func setupStartButton() {
         
-        self.startButton.tintColor = .blue
         self.startButton.layer.cornerRadius = 15
-        self.startButton.tintColor = UIColor.label
+        self.startButton.tintColor = UIColor.white
         self.startButton.setTitle("Start Game!", for: .normal)
         self.setButtonColor()
     }
@@ -128,16 +138,27 @@ class MainScreenViewController: UIViewController {
         
         let width = rect.size.width / CGFloat(columns)
         let height = rect.size.width / CGFloat(columns)
-        
         layout.itemSize = CGSize(width:width,  height: height)
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
         collectionView.setCollectionViewLayout(layout, animated: false)
+        collectionView.backgroundColor = .clear
         collectionView.reloadData()
         collectionView.isHidden = false
         
         
+    }
+    
+    func setBackgroundGradient() -> CAGradientLayer {
+        let layer = CAGradientLayer()
+        layer.frame = view.bounds
+        layer.colors = [UIColor.blue.cgColor, UIColor.systemPink.cgColor]
+        layer.startPoint = CGPoint(x: 0,y: 0)
+        layer.endPoint = CGPoint(x: 1,y: 1)
+        view.layer.addSublayer(layer)
+        
+        return layer
     }
     
     // Setup collection view (Grid)

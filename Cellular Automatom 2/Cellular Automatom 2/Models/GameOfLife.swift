@@ -16,22 +16,22 @@ class GameOfLife {
     static let shared = GameOfLife()
     
     // Game properties
-    internal let columns = 20
-    internal let rows = 30
+    internal let columns = 25
+    internal let rows = 25
     var cellStatus = [[Bool]]()
     
     
     //MARK: Init
     private init() {
         
-        randamize()
+        randomize()
     }
     
     //MARK: - Game Functions
     
     // Set cell state randomly
     
-    public func randamize() {
+    public func randomize() {
         
         cellStatus = [[Bool]]()
         

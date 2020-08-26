@@ -19,6 +19,8 @@
 		BB14221124F6A11700DC0007 /* GameOfLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14221024F6A11700DC0007 /* GameOfLife.swift */; };
 		BB14221324F6A2A000DC0007 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14221224F6A2A000DC0007 /* MainScreenViewController.swift */; };
 		BB14221524F6A2C200DC0007 /* PresetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14221424F6A2C200DC0007 /* PresetTableViewController.swift */; };
+		BBFC83AE24F6D6D900636C3E /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC83AD24F6D6D900636C3E /* ColorTableViewCell.swift */; };
+		BBFC83B024F6D6E500636C3E /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC83AF24F6D6E500636C3E /* ColorCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		BB14221024F6A11700DC0007 /* GameOfLife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLife.swift; sourceTree = "<group>"; };
 		BB14221224F6A2A000DC0007 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		BB14221424F6A2C200DC0007 /* PresetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetTableViewController.swift; sourceTree = "<group>"; };
+		BBFC83AD24F6D6D900636C3E /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
+		BBFC83AF24F6D6E500636C3E /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,8 @@
 		BB14220724F69F5C00DC0007 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BBFC83AD24F6D6D900636C3E /* ColorTableViewCell.swift */,
+				BBFC83AF24F6D6E500636C3E /* ColorCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,12 +333,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBFC83B024F6D6E500636C3E /* ColorCollectionViewCell.swift in Sources */,
 				BB14221124F6A11700DC0007 /* GameOfLife.swift in Sources */,
 				BB14220F24F6A0BA00DC0007 /* PresetModels.swift in Sources */,
 				BB1421D624F69E5700DC0007 /* AppDelegate.swift in Sources */,
 				BB14221524F6A2C200DC0007 /* PresetTableViewController.swift in Sources */,
 				BB14220C24F69FD800DC0007 /* CellColorHelper.swift in Sources */,
 				BB1421D824F69E5700DC0007 /* SceneDelegate.swift in Sources */,
+				BBFC83AE24F6D6D900636C3E /* ColorTableViewCell.swift in Sources */,
 				BB14221324F6A2A000DC0007 /* MainScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

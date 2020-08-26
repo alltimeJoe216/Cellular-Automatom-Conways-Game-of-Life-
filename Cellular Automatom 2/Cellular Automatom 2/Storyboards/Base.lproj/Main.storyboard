@@ -16,8 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abstract-pink-and-blue-background-with-gradient-effect-thumb" translatesAutoresizingMaskIntoConstraints="NO" id="RO5-ZI-rNO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1OR-uX-0f9">
-                                <rect key="frame" x="20" y="108" width="374" height="662"/>
+                                <rect key="frame" x="20" y="160" width="374" height="610"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="njU-h1-mSA">
                                     <size key="itemSize" width="50" height="50"/>
@@ -32,16 +35,21 @@
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8Ou-8T-O5d">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvX-xM-ufl">
-                                <rect key="frame" x="128" y="790" width="158" height="44"/>
+                                <rect key="frame" x="50" y="790" width="314" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="HmF-xB-FNi"/>
                                 </constraints>
-                                <state key="normal" title="Start"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Start Your Game!"/>
                                 <connections>
                                     <action selector="startButtonPressed:" destination="OPy-Ia-eF5" eventType="touchUpInside" id="ast-Nz-92x"/>
                                 </connections>
@@ -51,11 +59,15 @@
                         <constraints>
                             <constraint firstItem="1OR-uX-0f9" firstAttribute="top" secondItem="f6h-Fd-RKO" secondAttribute="top" constant="20" id="6WE-QR-UVL"/>
                             <constraint firstItem="WvX-xM-ufl" firstAttribute="top" secondItem="1OR-uX-0f9" secondAttribute="bottom" constant="20" id="BRN-iX-kda"/>
+                            <constraint firstItem="RO5-ZI-rNO" firstAttribute="leading" secondItem="f6h-Fd-RKO" secondAttribute="leading" id="QfY-Ri-dlI"/>
                             <constraint firstItem="f6h-Fd-RKO" firstAttribute="trailing" secondItem="1OR-uX-0f9" secondAttribute="trailing" constant="20" id="aQw-4k-Xr5"/>
-                            <constraint firstItem="WvX-xM-ufl" firstAttribute="leading" secondItem="f6h-Fd-RKO" secondAttribute="leading" constant="128" id="ekZ-RB-jdB"/>
+                            <constraint firstItem="RO5-ZI-rNO" firstAttribute="trailing" secondItem="f6h-Fd-RKO" secondAttribute="trailing" id="dsn-uT-p2f"/>
+                            <constraint firstItem="RO5-ZI-rNO" firstAttribute="top" secondItem="GLE-iX-6c8" secondAttribute="top" id="dv9-1U-Uoe"/>
+                            <constraint firstItem="WvX-xM-ufl" firstAttribute="leading" secondItem="f6h-Fd-RKO" secondAttribute="leading" constant="50" id="ekZ-RB-jdB"/>
                             <constraint firstAttribute="bottomMargin" secondItem="WvX-xM-ufl" secondAttribute="bottom" constant="28" id="moP-r1-HpT"/>
                             <constraint firstItem="1OR-uX-0f9" firstAttribute="leading" secondItem="f6h-Fd-RKO" secondAttribute="leading" constant="20" id="taN-DJ-nmO"/>
-                            <constraint firstItem="f6h-Fd-RKO" firstAttribute="trailing" secondItem="WvX-xM-ufl" secondAttribute="trailing" constant="128" id="z6b-jK-rXi"/>
+                            <constraint firstAttribute="bottom" secondItem="RO5-ZI-rNO" secondAttribute="bottom" id="yJC-dl-IK5"/>
+                            <constraint firstItem="f6h-Fd-RKO" firstAttribute="trailing" secondItem="WvX-xM-ufl" secondAttribute="trailing" constant="50" id="z6b-jK-rXi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="f6h-Fd-RKO"/>
                     </view>
@@ -68,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbw-AD-Cip" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293" y="-536"/>
+            <point key="canvasLocation" x="292.75362318840581" y="-536.38392857142856"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="I8H-5D-kjR">
@@ -87,7 +99,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="colorCell" rowHeight="86" id="K8i-zJ-jWy" customClass="ColorTableViewCell" customModule="SwiftyLifeGame" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="colorCell" rowHeight="86" id="K8i-zJ-jWy" customClass="ColorTableViewCell" customModule="Cellular_Automatom_2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="71.5" width="414" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K8i-zJ-jWy" id="uZl-Cb-rhF">
@@ -105,7 +117,7 @@
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colorCollectionViewCell" id="QDm-va-cvy" customClass="ColorCollectionViewCell" customModule="SwiftyLifeGame" customModuleProvider="target">
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colorCollectionViewCell" id="QDm-va-cvy" customClass="ColorCollectionViewCell" customModule="Cellular_Automatom_2" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jmk-BY-syS">
@@ -182,9 +194,11 @@
         <scene sceneID="dU3-FH-fzR">
             <objects>
                 <navigationController id="wG3-wX-b9P" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Uwh-Jo-2RQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="OPy-Ia-eF5" kind="relationship" relationship="rootViewController" id="QaX-mF-5E8"/>
@@ -195,4 +209,7 @@
             <point key="canvasLocation" x="-568" y="-536"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="abstract-pink-and-blue-background-with-gradient-effect-thumb" width="310" height="233"/>
+    </resources>
 </document>

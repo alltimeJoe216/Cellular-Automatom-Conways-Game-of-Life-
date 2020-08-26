@@ -10,7 +10,7 @@ import UIKit
 
 public class Pattern {
     
-    var _name = NSLocalizedString("Oscillator", comment: "")
+    var presetName = String("Oscillator")
     
     var cells:[CGPoint] {
         get {
@@ -19,7 +19,7 @@ public class Pattern {
     }
     var name:String  {
         get {
-            return _name
+            return presetName
         }
     }
     
@@ -61,7 +61,7 @@ public class Random: Pattern {
 
     override init() {
         super.init()
-        _name = NSLocalizedString("Random", comment: "")
+        presetName = NSLocalizedString("Random", comment: "")
     }
     override var cells:[CGPoint] {
         get {
@@ -84,7 +84,7 @@ public class Blinker: Pattern {
 
     override init() {
         super.init()
-        _name = NSLocalizedString("Blinker", comment: "")
+        presetName = NSLocalizedString("Blinker", comment: "")
     }
     override var cells:[CGPoint] {
         get {
@@ -101,7 +101,7 @@ public class TrafficLight: Pattern {
 
     override init() {
         super.init()
-        _name = NSLocalizedString("Traffic Light", comment: "")
+        presetName = NSLocalizedString("Traffic Light", comment: "")
     }
     override var cells:[CGPoint] {
         get {
@@ -131,7 +131,7 @@ public class Watch: Pattern {
 
     override init() {
         super.init()
-        _name = NSLocalizedString("Watch", comment: "")
+        presetName = NSLocalizedString("Watch", comment: "")
     }
     override var cells:[CGPoint] {
         get {
@@ -189,7 +189,7 @@ public class Pulsar: Pattern {
 
     override init() {
         super.init()
-        _name = NSLocalizedString("Pulsar", comment: "")
+        presetName = NSLocalizedString("Pulsar", comment: "")
     }
     override var cells:[CGPoint] {
         get {
@@ -266,7 +266,7 @@ public class Galaxy: Pattern {
 
     override init() {
         super.init()
-        _name = NSLocalizedString("Galaxy", comment: "")
+        presetName = NSLocalizedString("Galaxy", comment: "")
     }
     override var cells:[CGPoint] {
         get {
@@ -331,7 +331,7 @@ class Pentadecathlon: Pattern {
 
     override init() {
         super.init()
-        _name = NSLocalizedString("Pentadecathlon", comment: "")
+        presetName = NSLocalizedString("Pentadecathlon", comment: "")
     }
     override var cells:[CGPoint] {
         get {
@@ -367,7 +367,7 @@ class Pentadecathlon: Pattern {
 class Glider: Pattern {
     override init() {
         super.init()
-        _name = NSLocalizedString("Glider", comment: "")
+        presetName = NSLocalizedString("Glider", comment: "")
     }
     override var cells:[CGPoint] {
         get {
@@ -386,7 +386,7 @@ class Glider: Pattern {
 class DieHard: Pattern {
     override init() {
         super.init()
-        _name = NSLocalizedString("DieHard", comment: "")
+        presetName = NSLocalizedString("DieHard", comment: "")
     }
     override var cells:[CGPoint] {
         get {
@@ -406,7 +406,7 @@ class DieHard: Pattern {
 class SchickEngineB: Pattern {
     override init() {
         super.init()
-        _name = NSLocalizedString("SchickEngine(B-heptmino)", comment: "")
+        presetName = NSLocalizedString("SchickEngine(B-heptmino)", comment: "")
     }
     override var cells:[CGPoint] {
         get {
@@ -447,7 +447,7 @@ class SchickEngineB: Pattern {
 class SchickEngineT: Pattern {
     override init() {
         super.init()
-        _name = NSLocalizedString("SchickEngine(T-Tetromino)", comment: "")
+        presetName = NSLocalizedString("SchickEngine(T-Tetromino)", comment: "")
     }
     override var cells:[CGPoint] {
         get {
@@ -492,7 +492,7 @@ class SchickEngineT: Pattern {
 class Acorn: Pattern {
     override init() {
         super.init()
-        _name = NSLocalizedString("Acorn", comment: "")
+        presetName = NSLocalizedString("Acorn", comment: "")
     }
     override var cells:[CGPoint] {
         get {
@@ -512,7 +512,7 @@ class Acorn: Pattern {
 class Octagon: Pattern {
     override init() {
         super.init()
-        _name = NSLocalizedString("Octagon", comment: "")
+        presetName = NSLocalizedString("Octagon", comment: "")
     }
     override var cells:[CGPoint] {
         get {
@@ -549,7 +549,7 @@ class Octagon: Pattern {
 class SpaceShipHeavyWeight: Pattern {
     override init() {
         super.init()
-        _name = NSLocalizedString("Space Ship(Heavy Weight)", comment: "")
+        presetName = NSLocalizedString("Space Ship(Heavy Weight)", comment: "")
     }
     override var cells:[CGPoint] {
         get {
