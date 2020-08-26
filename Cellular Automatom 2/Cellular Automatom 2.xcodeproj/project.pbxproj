@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB1421D624F69E5700DC0007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1421D524F69E5700DC0007 /* AppDelegate.swift */; };
+		BB1421D824F69E5700DC0007 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1421D724F69E5700DC0007 /* SceneDelegate.swift */; };
+		BB1421DD24F69E5700DC0007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1421DB24F69E5700DC0007 /* Main.storyboard */; };
+		BB1421DF24F69E5700DC0007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1421DE24F69E5700DC0007 /* Assets.xcassets */; };
+		BB1421E224F69E5700DC0007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1421E024F69E5700DC0007 /* LaunchScreen.storyboard */; };
+		BB1421ED24F69E5700DC0007 /* Cellular_Automatom_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1421EC24F69E5700DC0007 /* Cellular_Automatom_2Tests.swift */; };
+		BB1421F824F69E5700DC0007 /* Cellular_Automatom_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1421F724F69E5700DC0007 /* Cellular_Automatom_2UITests.swift */; };
+		BB14220C24F69FD800DC0007 /* CellColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14220B24F69FD800DC0007 /* CellColorHelper.swift */; };
+		BB14220F24F6A0BA00DC0007 /* PresetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14220E24F6A0BA00DC0007 /* PresetModels.swift */; };
+		BB14221124F6A11700DC0007 /* GameOfLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14221024F6A11700DC0007 /* GameOfLife.swift */; };
+		BB14221324F6A2A000DC0007 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14221224F6A2A000DC0007 /* MainScreenViewController.swift */; };
+		BB14221524F6A2C200DC0007 /* PresetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14221424F6A2C200DC0007 /* PresetTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB1421E924F69E5700DC0007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1421CA24F69E5700DC0007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB1421D124F69E5700DC0007;
+			remoteInfo = "Cellular Automatom 2";
+		};
+		BB1421F424F69E5700DC0007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1421CA24F69E5700DC0007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB1421D124F69E5700DC0007;
+			remoteInfo = "Cellular Automatom 2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB1421D224F69E5700DC0007 /* Cellular Automatom 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cellular Automatom 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1421D524F69E5700DC0007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB1421D724F69E5700DC0007 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB1421DC24F69E5700DC0007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB1421DE24F69E5700DC0007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB1421E124F69E5700DC0007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB1421E324F69E5700DC0007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB1421E824F69E5700DC0007 /* Cellular Automatom 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cellular Automatom 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1421EC24F69E5700DC0007 /* Cellular_Automatom_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cellular_Automatom_2Tests.swift; sourceTree = "<group>"; };
+		BB1421EE24F69E5700DC0007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB1421F324F69E5700DC0007 /* Cellular Automatom 2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cellular Automatom 2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1421F724F69E5700DC0007 /* Cellular_Automatom_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cellular_Automatom_2UITests.swift; sourceTree = "<group>"; };
+		BB1421F924F69E5700DC0007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB14220B24F69FD800DC0007 /* CellColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellColorHelper.swift; sourceTree = "<group>"; };
+		BB14220E24F6A0BA00DC0007 /* PresetModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetModels.swift; sourceTree = "<group>"; };
+		BB14221024F6A11700DC0007 /* GameOfLife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLife.swift; sourceTree = "<group>"; };
+		BB14221224F6A2A000DC0007 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		BB14221424F6A2C200DC0007 /* PresetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB1421CF24F69E5700DC0007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1421E524F69E5700DC0007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1421F024F69E5700DC0007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB1421C924F69E5700DC0007 = {
+			isa = PBXGroup;
+			children = (
+				BB1421D424F69E5700DC0007 /* Cellular Automatom 2 */,
+				BB1421EB24F69E5700DC0007 /* Cellular Automatom 2Tests */,
+				BB1421F624F69E5700DC0007 /* Cellular Automatom 2UITests */,
+				BB1421D324F69E5700DC0007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB1421D324F69E5700DC0007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB1421D224F69E5700DC0007 /* Cellular Automatom 2.app */,
+				BB1421E824F69E5700DC0007 /* Cellular Automatom 2Tests.xctest */,
+				BB1421F324F69E5700DC0007 /* Cellular Automatom 2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB1421D424F69E5700DC0007 /* Cellular Automatom 2 */ = {
+			isa = PBXGroup;
+			children = (
+				BB1421E324F69E5700DC0007 /* Info.plist */,
+				BB14220924F69F8C00DC0007 /* Application */,
+				BB14220824F69F6300DC0007 /* Helpers */,
+				BB14220724F69F5C00DC0007 /* Views */,
+				BB14220624F69F5300DC0007 /* View Controllers */,
+				BB14220524F69F4E00DC0007 /* Models */,
+				BB14220A24F69FB600DC0007 /* Storyboards */,
+			);
+			path = "Cellular Automatom 2";
+			sourceTree = "<group>";
+		};
+		BB1421EB24F69E5700DC0007 /* Cellular Automatom 2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BB1421EC24F69E5700DC0007 /* Cellular_Automatom_2Tests.swift */,
+				BB1421EE24F69E5700DC0007 /* Info.plist */,
+			);
+			path = "Cellular Automatom 2Tests";
+			sourceTree = "<group>";
+		};
+		BB1421F624F69E5700DC0007 /* Cellular Automatom 2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB1421F724F69E5700DC0007 /* Cellular_Automatom_2UITests.swift */,
+				BB1421F924F69E5700DC0007 /* Info.plist */,
+			);
+			path = "Cellular Automatom 2UITests";
+			sourceTree = "<group>";
+		};
+		BB14220524F69F4E00DC0007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB14221024F6A11700DC0007 /* GameOfLife.swift */,
+				BB14220D24F6A07600DC0007 /* View Models */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB14220624F69F5300DC0007 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB14221224F6A2A000DC0007 /* MainScreenViewController.swift */,
+				BB14221424F6A2C200DC0007 /* PresetTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BB14220724F69F5C00DC0007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB14220824F69F6300DC0007 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BB14220B24F69FD800DC0007 /* CellColorHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BB14220924F69F8C00DC0007 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BB1421DE24F69E5700DC0007 /* Assets.xcassets */,
+				BB1421D524F69E5700DC0007 /* AppDelegate.swift */,
+				BB1421D724F69E5700DC0007 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BB14220A24F69FB600DC0007 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BB1421DB24F69E5700DC0007 /* Main.storyboard */,
+				BB1421E024F69E5700DC0007 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BB14220D24F6A07600DC0007 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB14220E24F6A0BA00DC0007 /* PresetModels.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB1421D124F69E5700DC0007 /* Cellular Automatom 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1421FC24F69E5700DC0007 /* Build configuration list for PBXNativeTarget "Cellular Automatom 2" */;
+			buildPhases = (
+				BB1421CE24F69E5700DC0007 /* Sources */,
+				BB1421CF24F69E5700DC0007 /* Frameworks */,
+				BB1421D024F69E5700DC0007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cellular Automatom 2";
+			productName = "Cellular Automatom 2";
+			productReference = BB1421D224F69E5700DC0007 /* Cellular Automatom 2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB1421E724F69E5700DC0007 /* Cellular Automatom 2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1421FF24F69E5700DC0007 /* Build configuration list for PBXNativeTarget "Cellular Automatom 2Tests" */;
+			buildPhases = (
+				BB1421E424F69E5700DC0007 /* Sources */,
+				BB1421E524F69E5700DC0007 /* Frameworks */,
+				BB1421E624F69E5700DC0007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB1421EA24F69E5700DC0007 /* PBXTargetDependency */,
+			);
+			name = "Cellular Automatom 2Tests";
+			productName = "Cellular Automatom 2Tests";
+			productReference = BB1421E824F69E5700DC0007 /* Cellular Automatom 2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB1421F224F69E5700DC0007 /* Cellular Automatom 2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB14220224F69E5700DC0007 /* Build configuration list for PBXNativeTarget "Cellular Automatom 2UITests" */;
+			buildPhases = (
+				BB1421EF24F69E5700DC0007 /* Sources */,
+				BB1421F024F69E5700DC0007 /* Frameworks */,
+				BB1421F124F69E5700DC0007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB1421F524F69E5700DC0007 /* PBXTargetDependency */,
+			);
+			name = "Cellular Automatom 2UITests";
+			productName = "Cellular Automatom 2UITests";
+			productReference = BB1421F324F69E5700DC0007 /* Cellular Automatom 2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB1421CA24F69E5700DC0007 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Joseph Veverka";
+				TargetAttributes = {
+					BB1421D124F69E5700DC0007 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					BB1421E724F69E5700DC0007 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = BB1421D124F69E5700DC0007;
+					};
+					BB1421F224F69E5700DC0007 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = BB1421D124F69E5700DC0007;
+					};
+				};
+			};
+			buildConfigurationList = BB1421CD24F69E5700DC0007 /* Build configuration list for PBXProject "Cellular Automatom 2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB1421C924F69E5700DC0007;
+			productRefGroup = BB1421D324F69E5700DC0007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB1421D124F69E5700DC0007 /* Cellular Automatom 2 */,
+				BB1421E724F69E5700DC0007 /* Cellular Automatom 2Tests */,
+				BB1421F224F69E5700DC0007 /* Cellular Automatom 2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB1421D024F69E5700DC0007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1421E224F69E5700DC0007 /* LaunchScreen.storyboard in Resources */,
+				BB1421DF24F69E5700DC0007 /* Assets.xcassets in Resources */,
+				BB1421DD24F69E5700DC0007 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1421E624F69E5700DC0007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1421F124F69E5700DC0007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB1421CE24F69E5700DC0007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB14221124F6A11700DC0007 /* GameOfLife.swift in Sources */,
+				BB14220F24F6A0BA00DC0007 /* PresetModels.swift in Sources */,
+				BB1421D624F69E5700DC0007 /* AppDelegate.swift in Sources */,
+				BB14221524F6A2C200DC0007 /* PresetTableViewController.swift in Sources */,
+				BB14220C24F69FD800DC0007 /* CellColorHelper.swift in Sources */,
+				BB1421D824F69E5700DC0007 /* SceneDelegate.swift in Sources */,
+				BB14221324F6A2A000DC0007 /* MainScreenViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1421E424F69E5700DC0007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1421ED24F69E5700DC0007 /* Cellular_Automatom_2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1421EF24F69E5700DC0007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1421F824F69E5700DC0007 /* Cellular_Automatom_2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB1421EA24F69E5700DC0007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB1421D124F69E5700DC0007 /* Cellular Automatom 2 */;
+			targetProxy = BB1421E924F69E5700DC0007 /* PBXContainerItemProxy */;
+		};
+		BB1421F524F69E5700DC0007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB1421D124F69E5700DC0007 /* Cellular Automatom 2 */;
+			targetProxy = BB1421F424F69E5700DC0007 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB1421DB24F69E5700DC0007 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB1421DC24F69E5700DC0007 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB1421E024F69E5700DC0007 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB1421E124F69E5700DC0007 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB1421FA24F69E5700DC0007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB1421FB24F69E5700DC0007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB1421FD24F69E5700DC0007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cellular Automatom 2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoeVeverka.Cellular-Automatom-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB1421FE24F69E5700DC0007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cellular Automatom 2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoeVeverka.Cellular-Automatom-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB14220024F69E5700DC0007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cellular Automatom 2Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoeVeverka.Cellular-Automatom-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cellular Automatom 2.app/Cellular Automatom 2";
+			};
+			name = Debug;
+		};
+		BB14220124F69E5700DC0007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cellular Automatom 2Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoeVeverka.Cellular-Automatom-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cellular Automatom 2.app/Cellular Automatom 2";
+			};
+			name = Release;
+		};
+		BB14220324F69E5700DC0007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cellular Automatom 2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoeVeverka.Cellular-Automatom-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cellular Automatom 2";
+			};
+			name = Debug;
+		};
+		BB14220424F69E5700DC0007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cellular Automatom 2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoeVeverka.Cellular-Automatom-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cellular Automatom 2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB1421CD24F69E5700DC0007 /* Build configuration list for PBXProject "Cellular Automatom 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1421FA24F69E5700DC0007 /* Debug */,
+				BB1421FB24F69E5700DC0007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1421FC24F69E5700DC0007 /* Build configuration list for PBXNativeTarget "Cellular Automatom 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1421FD24F69E5700DC0007 /* Debug */,
+				BB1421FE24F69E5700DC0007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1421FF24F69E5700DC0007 /* Build configuration list for PBXNativeTarget "Cellular Automatom 2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB14220024F69E5700DC0007 /* Debug */,
+				BB14220124F69E5700DC0007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB14220224F69E5700DC0007 /* Build configuration list for PBXNativeTarget "Cellular Automatom 2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB14220324F69E5700DC0007 /* Debug */,
+				BB14220424F69E5700DC0007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB1421CA24F69E5700DC0007 /* Project object */;
+}
